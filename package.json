@@ -1,6 +1,6 @@
 {
-  "name": "node-red-contrib-salesforce",
-  "version": "0.7.3",
+  "name": "node-red-contrib-salesforce-fix",
+  "version": "0.7.4",
   "description": "A set of Node-RED nodes to interact with Salesforce and Force.com.",
   "author": {
     "name": "Jeff Douglas",
@@ -8,18 +8,14 @@
   },
   "contributors": [
     {
-      "name": "Stephan H. Wissel",
-      "url": "https://wissel.net",
-      "email": "stephan@wissel.net"
-    },
-    {
-      "name": "Srikanth Ramakrishnan",
-      "email": "srikanth.r@salesforce.com"
+      "name": "Todd Hiles",
+      "url": "https://github.com/moonrockfamily/node-red-contrib-salesforce",
+      "email": "2ToddHiles@gmail.com"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Stwissel/node-red-contrib-salesforce"
+    "url": "https://github.com/moonrockfamily/node-red-contrib-salesforce"
   },
   "keywords": [
     "node-red",
@@ -40,8 +36,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "faye": "^1.2.5",
-    "nforce8": "2.0.12",
+    "faye": "^1.4.0",
+    "nforce8-fix": "^2.0.13",
     "xml2js": "^0.4.23"
   },
   "scripts": {
@@ -51,14 +47,14 @@
     "access": "public"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-plugin-mocha": "^7.0.0",
-    "istanbul": "^0.4.5",
-    "mocha": "^6.2.2",
-    "node-red": "^1.0.3",
-    "node-red-node-test-helper": "^0.2.3",
+    "eslint": "^8.28.0",
+    "eslint-plugin-mocha": "^10.1.0",
+    "mocha": "^10.1.0",
+    "node-red": "^3.0.2",
+    "node-red-node-test-helper": "^0.3.0",
+    "nyc": "^15.1.0",
     "should": "^13.2.3",
-    "sinon": "^8.0.1",
-    "supertest": "^4.0.2"
+    "sinon": "^14.0.2",
+    "supertest": "^6.3.1"
   }
 }

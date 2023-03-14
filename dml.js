@@ -31,7 +31,7 @@ const handleInput = (node, msg) => {
           break;
         case 'upsert':
           if (msg.hasOwnProperty('externalId')) {
-            sobj.sobject.setExternalId(msg.externalId.field, msg.externalId.value);
+            sobj.setExternalId(msg.externalId.field, msg.externalId.value);
           }
           dmlResult = org.upsert(payload);
           break;

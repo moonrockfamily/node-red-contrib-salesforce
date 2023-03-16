@@ -71,6 +71,7 @@ module.exports = (RED) => {
     this.poturl = getConfigValue(config, 'poturl');
     this.usePotUrl = envResult.usePotUrl;
     this.userName = getConfigValue(config, 'userName');
+    this.agentOptions = getConfigValue(config,'agentOptions');
     // Register the Node
     RED.nodes.createNode(this, config);
   }

@@ -47,12 +47,17 @@
       apiversion: {
         value: API_VERSION,
         required: true
-      }
+      },
+      agentOptions: { value: '{}' }
     },
     label: function() {
       return this.name || this.username + ' connection';
     },
     oneditprepare: function() {
+      $('#node-config-input-agentOptions').typedInput({
+        type: 'json',
+        types: ['json'],
+      })
       setTimeout(function() {
         var jqCurDialog = $("[aria-describedby='node-config-dialog']:visible");
         var dialogWidth = $(window).width() - 100;
@@ -164,6 +169,10 @@
           <label for="node-config-input-passWord"><i class="fa fa-lock"></i> Password</label>
           <input type="password" id="node-config-input-passWord" />
       </div>
+  </div>
+  <div class="form-row agentOptions">
+    <label for="node-config-input-agentOptions"><i class="fa fa-filter"></i>&nbsp;&nbsp;https Agent Options</label>
+    <input type="text" id="node-config-input-agentOptions">
   </div>
 </script>
 
